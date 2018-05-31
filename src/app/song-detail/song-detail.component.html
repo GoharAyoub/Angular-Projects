@@ -1,0 +1,32 @@
+
+<div *ngIf="song">
+
+    <h2>{{ song.name }} Information</h2>
+    <div><span class="labeling">Rank:</span>{{song.rank}}</div>
+    <div>
+      <span class="labeling">Name:</span> <span class="content">{{song.name}}<br></span>
+      <span class="labeling">Lyrics:</span> <span class="content">{{song.lyrics}}<br></span>
+      <span class="labeling">Comment:</span> <span class="content">{{song.comment}}<br></span>
+      <label id="changingcomment">Comment:
+        <input [(ngModel)]="song.comment" placeholder="comment">
+      </label>
+
+    </div>
+    <button (click)="goBack()">go back</button>
+  
+  </div>
+  
+<!--
+  <div *ngIf="song">
+  <h2>{{ song.name | uppercase }} Information</h2>
+  <div><span>rank </span>{{song.rank}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="song.name" placeholder="name"/>
+    </label>
+  </div>
+  <button (click)="goBack()">go back</button>
+</div>
+
+-->
+  

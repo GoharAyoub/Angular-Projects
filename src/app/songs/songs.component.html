@@ -1,0 +1,21 @@
+<!--
+  <h2>{{ song.name }} Information</h2>
+<div><span>Rank: </span>{{song.rank}}</div>
+<div><span>Name: </span>{{song.name}}</div>
+<div><span>Lyrics: </span>{{song.lyrics}}</div>
+<div><span>Comment: </span>{{song.comment}}</div>
+<div>
+    <label>comment:
+      <input [(ngModel)]="song.comment" placeholder="comment">
+    </label>
+</div>
+
+-->
+<h2>Queen Songs</h2>
+<ul class="heroes">
+  <li *ngFor="let song of songs">
+    <a routerLink="/detail/{{song.rank}}">
+      <span class="badge">{{song.rank}}</span> {{song.name}}
+    </a>
+  </li>
+</ul>

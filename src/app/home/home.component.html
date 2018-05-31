@@ -1,0 +1,9 @@
+<h3>Top Songs</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let song of Songs" class="col-1-4"
+      routerLink="/detail/{{song.rank}}">
+    <div class="module hero">
+      <h4>{{song.name}}</h4>
+    </div>
+  </a>
+</div>
