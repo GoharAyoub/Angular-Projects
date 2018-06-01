@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { SongsComponent } from './songs/songs.component';
 import { SongDetailComponent } from './song-detail/song-detail.component';
 import { MessagesComponent } from './messages/messages.component';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 
 @NgModule({
